@@ -1,4 +1,4 @@
-from store.models import Space, Facility, Furniture
+from store.models import Space, Furniture, Image
 from rest_framework import serializers
 
 class SpaceSerializer(serializers.ModelSerializer):
@@ -11,3 +11,7 @@ class FurnitureSerializer(serializers.ModelSerializer):
         model = Furniture
         fields = '__all__'
 
+class ImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Image
+        fields = '__all__'

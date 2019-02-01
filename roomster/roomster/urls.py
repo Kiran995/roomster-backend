@@ -23,6 +23,7 @@ from store import api
 router = DefaultRouter()
 router.register('space', api.SpaceAPIViewset)
 router.register('furniture', api.FurnitureAPIViewset)
+router.register('images', api.ImageAPIViewset)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
